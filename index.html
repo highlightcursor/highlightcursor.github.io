@@ -33,8 +33,7 @@
         <nav class="container flex justify-between items-center w-full">
             <a href="index.html" class="text-2xl font-extrabold text-gray-900">HighlightCursor</a>
             <div>
-                <a href="try.html" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-md transition duration-300">Try it Live!</a>
-                <!-- Other navigation links can go here if needed -->
+                <!-- Removed "Try it Live!" button from header -->
             </div>
         </nav>
     </header>
@@ -48,18 +47,19 @@
             <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-2xl mx-auto">
                 Make your mouse cursor stand out with a customizable highlight, perfect for presentations, tutorials, or improved visibility.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
-                    Add to Chrome (Coming Soon!)
+            <!-- Added w-full to ensure button container takes full width for centering -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+                <a href="https://chromewebstore.google.com/detail/jhdameblafaliojggnajbfmmogmkipmf?utm_source=item-share-cb"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
+                    Add to Chrome
                 </a>
-                <a href="try.html" class="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
-                    Try it Live!
-                </a>
+                <!-- Removed "Try it Live!" button from Hero Section -->
                 <a href="/downloads/cursor.zip" download="cursor.zip" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
                     Download Extension (ZIP)
                 </a>
             </div>
-            <p class="mt-4 text-sm opacity-80">(Link will go to Chrome Web Store once published)</p>
             <p class="mt-2 text-sm opacity-80 max-w-xl mx-auto">
                 To install the downloaded ZIP: Unzip it, go to <span class="font-semibold">chrome://extensions</span>, enable "Developer mode", and click "Load unpacked" to select the unzipped folder.
             </p>
@@ -97,6 +97,52 @@
         </div>
     </section>
 
+    <!-- How It Works Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How It Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg text-gray-700 space-y-6">
+                    <p>HighlightCursor is incredibly simple to use, yet powerful in its effect. Once installed from the Chrome Web Store, the extension quietly runs in the background.</p>
+                    <p>When activated, it creates a subtle, customizable highlight around your mouse cursor. This highlight moves seamlessly with your cursor, making it effortless to track its position on any webpage, regardless of content or background.</p>
+                    <p>You can quickly **toggle the highlight on or off** directly from the extension's popup, giving you complete control over when and where you need that extra visual guidance.</p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="https://lh3.googleusercontent.com/l5RMr6ToZZkGNvaXlRInpSXUGmlAhb0Y4Uvqnmn2d4v8zfPvEf7AgTnxLw1qmIh0cI9AYp6I4nUtiAgwfujhjuVEtQ=s1280-w1280-h800" alt="HighlightCursor in action" class="rounded-lg shadow-xl w-full h-auto max-w-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is It For? Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Who Is It For?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Presenters & Educators</h3>
+                    <p class="text-gray-600">Ensure your audience never loses track of your cursor during online presentations, webinars, or virtual lessons.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Content Creators</h3>
+                    <p class="text-gray-600">Create clearer tutorials and screen recordings by visually emphasizing your cursor's movements.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Accessibility Users</h3>
+                    <p class="text-gray-600">Improve cursor visibility for users with visual impairments or those who struggle with standard cursors.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Multi-Monitor Users</h3>
+                    <p class="text-gray-600">Quickly locate your cursor across multiple screens, enhancing productivity.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Anyone Seeking Focus</h3>
+                    <p class="text-gray-600">Reduce eye strain and maintain focus in busy web environments by making your cursor prominent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section class="bg-indigo-700 text-white py-16 text-center shadow-inner">
         <div class="container">
@@ -104,18 +150,19 @@
             <p class="text-xl opacity-90 mb-8 max-w-xl mx-auto">
                 Get HighlightCursor today and take control of your focus on any webpage.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
+            <!-- Added w-full to ensure button container takes full width for centering -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+                <a href="https://chromewebstore.google.com/detail/jhdameblafaliojggnajbfmmogmkipmf?utm_source=item-share-cb"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
                     Install HighlightCursor Now!
                 </a>
-                <a href="try.html" class="bg-yellow-400 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
-                    Try it Live!
-                </a>
+                <!-- Removed "Try it Live!" button from Call to Action Section -->
                 <a href="/downloads/cursor.zip" download="cursor.zip" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
                     Download Extension (ZIP)
                 </a>
             </div>
-            <p class="mt-4 text-sm opacity-80">(Link will go to Chrome Web Store once published)</p>
             <p class="mt-2 text-sm opacity-80 max-w-xl mx-auto">
                 To install the downloaded ZIP: Unzip it, go to <span class="font-semibold">chrome://extensions</span>, enable "Developer mode", and click "Load unpacked" to select the unzipped folder.
             </p>
