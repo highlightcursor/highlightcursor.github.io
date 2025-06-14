@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HighlightCursor</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for default text */
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Allow header, content, footer to stack */
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.5rem;
+        }
+        /* Custom colors for consistency */
+        .bg-indigo-700 { background-color: #4338ca; }
+        .text-indigo-600 { color: #4f46e5; }
+        .hover\:text-indigo-600:hover { color: #4f46e5; }
+        .hover\:bg-indigo-800:hover { background-color: #3730a3; }
+        h1, h2 {
+            color: #0f172a; /* Darker headings */
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.75rem; margin-top: 2rem; }
+        p { margin-bottom: 1rem; }
+        a {
+            color: #4f46e5; /* Indigo-600 */
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem; /* Space between form fields */
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            background-color: #f8fafc; /* Light background for form */
+        }
+        form label {
+            font-weight: 500;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        form input[type="email"],
+        form textarea {
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.375rem;
+            font-size: 1rem;
+            color: #334155;
+            background-color: #ffffff;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        form input[type="email"]:focus,
+        form textarea:focus {
+            outline: none;
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+        }
+        form textarea {
+            min-height: 120px;
+            resize: vertical; /* Allow vertical resizing */
+        }
+        form button[type="submit"] {
+            background-color: #4f46e5; /* Indigo button */
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            align-self: flex-start; /* Align button to start of form */
+        }
+        form button[type="submit"]:hover {
+            background-color: #3730a3; /* Darker indigo on hover */
+            transform: translateY(-1px);
+        }
+        /* Footer alignment for contact page */
+        footer {
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm h-16 flex items-center">
+        <nav class="container flex justify-between items-center w-full">
+            <a href="index.html" class="text-2xl font-extrabold text-gray-900">HighlightCursor</a>
+            <div>
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-md transition duration-300">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Content -->
+    <section class="py-16 flex-grow">
+        <div class="container bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-center font-extrabold mb-8">Contact Us</h1>
+
+            <p class="mb-6 text-center text-lg">
+                We'd love to hear from you! You can reach us via email or by filling out the form below.
+            </p>
+
+            <div class="text-center mb-10">
+                <p class="text-xl font-semibold text-gray-800">Email us directly:</p>
+                <p class="text-indigo-600 text-2xl font-bold mt-2">
+                    <a href="mailto:hi.opticflowstudios@gmail.com" class="hover:underline">hi.opticflowstudios@gmail.com</a>
+                </p>
+            </div>
+
+            <h2 class="text-center text-2xl font-bold mb-6">Or Send Us a Message:</h2>
+
+            <!-- Contact Form -->
+            <form action="https://formspree.io/f/mldnneed" method="POST">
+                <label>
+                    Your Email:
+                    <input type="email" name="email" placeholder="your@example.com" required>
+                </label>
+                <label>
+                    Your Message:
+                    <textarea name="message" placeholder="Type your message here..." required></textarea>
+                </label>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 text-center text-sm">
+        <div class="container">
+            <p>&copy; 2025 HighlightCursor. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="privacy.html" class="hover:text-white mx-2">Privacy Policy</a> |
+                <a href="contact.html" class="hover:text-white mx-2">Contact</a>
+            </div>
+            <p class="mt-4 text-gray-500 text-xs">Website designed with assistance from an AI assistant, powered by Google Gemini.</p>
+            <p class="text-gray-500 text-xs">Icons in extension by Icons8.</p>
+        </div>
+    </footer>
+</body>
+</html>
