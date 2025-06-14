@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighlightCursor - Official Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for default text */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1.5rem;
+        }
+        /* Custom colors for consistency */
+        .bg-indigo-700 { background-color: #4338ca; }
+        .text-indigo-600 { color: #4f46e5; }
+        .hover\:bg-indigo-800:hover { background-color: #3730a3; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-extrabold text-gray-900">HighlightCursor</a>
+            <div>
+                <a href="privacy.html" class="text-gray-700 hover:text-indigo-600 px-4 py-2 rounded-md transition duration-300">Privacy Policy</a>
+                <!-- You can add more navigation links here -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-20 md:py-32 text-center shadow-lg">
+        <div class="container">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Enhance Your Focus with <br><span class="text-yellow-300">HighlightCursor</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-2xl mx-auto">
+                Make your mouse cursor stand out with a customizable highlight, perfect for presentations, tutorials, or improved visibility.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
+                    Add to Chrome (Coming Soon!)
+                </a>
+                <a href="/downloads/cursor.zip" download="cursor.zip" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
+                    Download Extension (ZIP)
+                </a>
+            </div>
+            <p class="mt-4 text-sm opacity-80">(Link will go to Chrome Web Store once published)</p>
+            <p class="mt-2 text-sm opacity-80 max-w-xl mx-auto">
+                To install the downloaded ZIP: Unzip it, go to <span class="font-semibold">chrome://extensions</span>, enable "Developer mode", and click "Load unpacked" to select the unzipped folder.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105">
+                    <div class="text-indigo-600 mb-4">
+                        <!-- Icon Placeholder - Replace with actual icons (e.g., from Lucide React or inline SVG) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Customizable Size</h3>
+                    <p class="text-gray-600">Adjust the highlight radius to perfectly suit your needs, from subtle to prominent.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105">
+                    <div class="text-indigo-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M18 8A6 6 0 0 0 6 8v8a6 6 0 0 0 12 0V8z"></path><path d="M10 21h4"></path><path d="M12 17v4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Always Visible</h3>
+                    <p class="text-gray-600">Your highlight remains consistent across all web pages, improving navigation.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105">
+                    <div class="text-indigo-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Simple Toggle</h3>
+                    <p class="text-gray-600">Quickly enable or disable the highlight from the extension popup when needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-indigo-700 text-white py-16 text-center shadow-inner">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to improve your browsing experience?</h2>
+            <p class="text-xl opacity-90 mb-8 max-w-xl mx-auto">
+                Get HighlightCursor today and take control of your focus on any webpage.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
+                    Install HighlightCursor Now!
+                </a>
+                <a href="/downloads/cursor.zip" download="cursor.zip" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 inline-block">
+                    Download Extension (ZIP)
+                </a>
+            </div>
+            <p class="mt-4 text-sm opacity-80">(Link will go to Chrome Web Store once published)</p>
+            <p class="mt-2 text-sm opacity-80 max-w-xl mx-auto">
+                To install the downloaded ZIP: Unzip it, go to <span class="font-semibold">chrome://extensions</span>, enable "Developer mode", and click "Load unpacked" to select the unzipped folder.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 text-center text-sm">
+        <div class="container">
+            <p>&copy; 2025 HighlightCursor. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="privacy.html" class="hover:text-white mx-2">Privacy Policy</a> |
+                <a href="#" class="hover:text-white mx-2">Contact</a> <!-- Replace # with actual contact info if needed -->
+            </div>
+            <p class="mt-4 text-gray-500 text-xs">Website designed with assistance from an AI assistant, powered by Google Gemini.</p>
+            <p class="text-gray-500 text-xs">Icons in extension by Icons8.</p>
+        </div>
+    </footer>
+</body>
+</html>
